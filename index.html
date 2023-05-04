@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <div class="editor_container">
+        <section id="file_options">
+            <label for="file_input">choose a file</label>
+            <input type="file" 
+                   id="file_input" 
+                   accept="image/png, image/jpeg"
+                   multiple>
+        </section>
+        <section id="pen_options">
+        </section>
+        <section id="filters">
+
+        </section>
+        <canvas id="my_canvas" width="300" height="300"></canvas>
+
+        </section>
+        <section id="applied_filters">
+        </section>
+    </div>
+
+    <script src="./tools/tool.js"></script>
+    <script src="./tools/pen.js"></script>
+    <script src="./tools/img.js"></script>
+    <script src="./tools/filters/simple_filters/filter.js"></script>
+    <script src="./tools/filters/simple_filters/sepia.js"></script>
+    <script src="./tools/filters/simple_filters/gray_scale.js"></script>
+    <script src="./tools/filters/simple_filters/binarization.js"></script>
+    <script src="./tools/filters/simple_filters/negative.js"></script>
+
+
+    <script src="./tools/filters/kernel_filters/kernel_filter.js"></script>
+    <script src="./tools/filters/kernel_filters/gaussian_blur.js"></script>
+    <script src="./tools/filters/kernel_filters/box_blur.js"></script>
+    <script src="./tools/filters/kernel_filters/unsharp_masking.js"></script>
+    <script src="./tools/filters/kernel_filters/border_detection.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>
