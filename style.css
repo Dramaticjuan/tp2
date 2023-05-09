@@ -35,9 +35,7 @@ section#applied_filters{
 }
 .applied_filter{
     background-color: #F0F0F0;
-    border-width: 4px;
-    border-style: solid;
-    border-color: #e4e4e4 #dbdbdb #e4e4e4 #dbdbdb;
+    border: 1px solid black;
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -46,14 +44,19 @@ section#applied_filters{
 
 input, label[for="file_input"]{
     display: block;
-    
+    color: black;
     padding: 1px 6px;
-    border-width: 4px;
-    border-style: solid;
-    border-color: white #7B7B7B #7B7B7B white;
-    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
+    background-color: #f0f0f0;
 }
+input:enabled, label[for="file_input"]{
 
+    border: 1px solid black;
+}
+input:hover:enabled, label[for="file_input"]:hover{
+    color: #F0F0F0;
+    background-color: black;
+}
 
 /* los input file no los muestro, para mostrar solo el label
  * porque es mas facil de manejar desde css

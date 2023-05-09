@@ -1,14 +1,22 @@
 ## todo:
 - [x] Add style to applied filter div
-- [ ] HSV filters
-- [ ] Start page (choose blank canvas or image)
-    - [ ] Generate canvas at demand
-    - [ ] Show inputs for each one
-- [ ] Show information and state of each section
-    - [ ] Filter section should say why there are no filters loaded if no image 
-    - [ ] Filters applied should say "no filter applied"
-- [ ] Download the edited image
-- [ ] resize image or canvas
+- [x] HSV filters
+- [x] Start page (choose blank canvas or image)
+    - [x] Generate canvas at demand
+    - [x] Show inputs for each one
+- [x] Show information and state of each section
+applied via enabling// disabling buttons
+
+- [x] Download the edited image
+- [x] resize image or canvas
 
 ### optional
 - [ ] Change styles 
+
+
+# Documentación
+
+
+### utils
+
+https://stackoverflow.com/questions/8126623/downloading-canvas-element-to-an-image

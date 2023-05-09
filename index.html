@@ -10,22 +10,38 @@
 </head>
 <body >
     <div class="editor_container">
+        <section id="canvas_options">
+            <input type="button"
+                   id="reset_canvas"
+                   value="start_with_canvas">
+            <input type="button"
+                   id="download"
+                   value="download"
+                   disabled>
+        </section>
         <section id="file_options">
-            <label for="file_input">choose a file</label>
+            <label for="file_input" id="file_input_label">start_with_image</label>
             <input type="file" 
                    id="file_input" 
                    accept="image/png, image/jpeg"
                    multiple>
+            <input type="button"
+                   id="reset_image"
+                   value="reset image"
+                   disabled>
+
         </section>
         <section id="pen_options">
+            
         </section>
         <section id="filters">
 
         </section>
-        <canvas id="my_canvas" width="300" height="300"></canvas>
-
+        <section id="canvas_container">
+            <canvas id="my_canvas" width="0" height="0"></canvas>
         </section>
         <section id="applied_filters">
+
         </section>
     </div>
 
@@ -43,7 +59,11 @@
     <script src="./tools/filters/kernel_filters/gaussian_blur.js"></script>
     <script src="./tools/filters/kernel_filters/box_blur.js"></script>
     <script src="./tools/filters/kernel_filters/unsharp_masking.js"></script>
-    <script src="./tools/filters/kernel_filters/border_detection.js"></script>
+
+    <script src="./tools/filters/hsv/hsv_filter.js"></script>
+    <script src="./tools/filters/hsv/brightness.js"></script>
+    <script src="./tools/filters/hsv/saturation.js"></script>
+    <script src="./utils.js"></script>
     <script src="./index.js"></script>
 
 </body>

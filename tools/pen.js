@@ -5,6 +5,7 @@ class Pen extends Tool{
         this.ant_y= null
         this.pos_x= null
         this.pos_y= null
+        this.is_pen= true
         this.ctx= ctx
     }
 
@@ -25,6 +26,9 @@ class Pen extends Tool{
         this.ant_y= this.pos_y
         this.pos_x= pos_x
         this.pos_y= pos_y
+    }
+    not_pen(){
+        this.is_pen= !this.is_pen
     }
     render(){
         let input_pen= document.createElement("input")
