@@ -41,10 +41,10 @@ Cambia el estilo de los inputs y el estado de pen. Dependiendo del estado del pe
 En esta seccion hay funciones que sirven para renderizar un array de tools, desabilitar los hijos de un nodo y habilitar los hijos de un nodo.
 
 ## utils.js
-`function resize_canvas(ancho, alto)` Cambia el ancho y el alto del canvas.
-`function generate_white_canvas()` Genera un rectángulo del tamaño del canvas con el color default.
-`function clear_canvas()` Elimina todos los inputs que genera la imagen, coloca en null a la imagen, deshabilita los inputs de los filtros, borra todos los input que recibio file_input y genera un canvas blanco de 300x300
-`function download_image()` Genera un elemento anchor que descarga una imagen 'filename.png' que es una copia del canvas y clickea el archor generado.  
+- `function resize_canvas(ancho, alto)` Cambia el ancho y el alto del canvas.
+- `function generate_white_canvas()` Genera un rectángulo del tamaño del canvas con el color default.
+- `function clear_canvas()` Elimina todos los inputs que genera la imagen, coloca en null a la imagen, deshabilita los inputs de los filtros, borra todos los input que recibio file_input y genera un canvas blanco de 300x300
+- `function download_image()` Genera un elemento anchor que descarga una imagen 'filename.png' que es una copia del canvas y clickea el archor generado.  
 
 # Recursos
 
