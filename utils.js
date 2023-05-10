@@ -17,7 +17,6 @@ function clear_canvas(){
     generate_white_canvas()
 }
 function download_image(){
-    console.log("eee")
     let link = document.createElement('a')
     link.download = 'filename.png'
     link.href = canvas.toDataURL("image/png")

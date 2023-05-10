@@ -34,7 +34,7 @@ class Img {
     }
     remove_filter(index){
         this.applied_filters.splice(index, 1)
-        this.reset_copy_image()
+        this.generate_copy_image()
         this.use_all_applied_filters()
         // tengo que renderizar todos porque cambia la numeración
         // podría hacerlo con un sistema de ids, pero no me parece necesario

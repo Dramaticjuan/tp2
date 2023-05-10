@@ -67,7 +67,7 @@ class KernelFilter extends Filter {
         if (point.y< 0){
             point.y= 0
         }
-        if(point.y>((image.width-1))){
+        if(point.y>((image.height-1))){
             point.y= image.height-1
         }
 

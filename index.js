@@ -1,7 +1,17 @@
+/*-------------------------------
+ *      Get DOM Elements
+ *-------------------------------
+*/
 /** @type {HTMLCanvasElement} */
 const canvas = document.getElementById("my_canvas")
 const ctx = canvas.getContext('2d')
 const default_canvas_color= "#F0F0F0"
+
+const file_input = document.getElementById('file_input')
+const file_input_label = document.getElementById('file_input_label')
+const reset_image = document.getElementById('reset_image')
+const reset_canvas = document.getElementById('reset_canvas')
+const download_button = document.getElementById('download')
 
 
 const image_section= document.getElementById("file_options")
@@ -10,7 +20,10 @@ const filter_section= document.getElementById("filters")
 const canvas_section= document.getElementById("canvas_container")
 const applied_filters_section= document.getElementById("applied_filters")
 
-
+/*-------------------------------
+ *      Generación de instancias
+ *-------------------------------
+*/
 const pen= new Pen(pen_section, ctx)
 const img= new Img(applied_filters_section, ctx)
 const filters= [new Sepia(filter_section, img),
@@ -24,12 +37,12 @@ const filters= [new Sepia(filter_section, img),
     new Saturation(filter_section, img)
     ]
 
-const file_input = document.getElementById('file_input')
-const file_input_label = document.getElementById('file_input_label')
-const reset_image = document.getElementById('reset_image')
-const reset_canvas = document.getElementById('reset_canvas')
-const download_button = document.getElementById('download')
 
+
+/*-------------------------------
+ *      Lógica de canvas
+ *-------------------------------
+*/
 file_input.addEventListener('change', () => {
     img.set_image(file_input.files[0])
     img.original.onload=()=> {
@@ -66,6 +79,7 @@ const input_color= document.getElementById("pen_color")
 render_collection(filters)
 disable_childs(filter_section)
 disable_childs(pen_section)
+
 
 
 /*-------------------------------
@@ -116,7 +130,7 @@ function not_selected(dom_node){
 }
 
 /*-------------------------------
- *      Lógica de los filtros
+ *      Render helpers
  *
  *-------------------------------
 */
